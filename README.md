@@ -1,3 +1,3 @@
-#web2
+WEB2
 
-exo javascript2
+exo javascript2 wass
