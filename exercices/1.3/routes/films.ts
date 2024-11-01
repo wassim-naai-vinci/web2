@@ -117,6 +117,7 @@ router.post("/", (req, res) => {
     ("imageUrl" in body && (typeof body.imageUrl !== "string" || !body.imageUrl.trim()))
   ) {
     return res.json("Wrong body information/format")
+    //     return res.sendStatus(400);
   }
 
   const newFilm = body as NewFilm;
