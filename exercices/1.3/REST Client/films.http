@@ -1,3 +1,30 @@
+@baseUrl = http://localhost:3000
+
 ### Read all films
-GET http://localhost:3000/films
+
+GET {{baseUrl}}/films
+
+### Read all films with minimum-duration of 140min
+GET {{baseUrl}}/films/?minimum-duration=130
+
+### Read all films with wrong minimum-duration
+GET {{baseUrl}}/films/?minimum-duration=0
+
+### Read a single film with id = 2
+GET {{baseUrl}}/films/2
+
+### Read a single film with wrong id
+GET {{baseUrl}}/films/100
+
+### Create a film
+POST {{baseUrl}}/films/
+Content-Type: application/json
+
+{
+    "title":"Star Wars: The Phantom Menace (Episode I)",
+    "duration": 136,
+    "director": "George Lucas",
+    "budget": 115,
+    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+}
 
