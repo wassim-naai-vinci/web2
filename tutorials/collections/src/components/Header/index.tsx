@@ -2,7 +2,7 @@ import "./Header.css";
 
 interface HeaderProps {
     title: string;
-    version:number;
+    version: number;
   }
   
   const Header = (props: HeaderProps) => {
